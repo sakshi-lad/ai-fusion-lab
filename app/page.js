@@ -2,15 +2,13 @@
 import { Button } from "@/components/ui/button";
 import { useTheme } from "next-themes";
 import Image from "next/image";
+import ChatinputBox from "./_componets/ChatinputBox";
 
 export default function Home() {
   const{setTheme}=useTheme();
   return (
     <div>
-      <h1>Welcome to ai-fusion-lab</h1>
-      <Button>Subscribe</Button>
-      <Button onClick={()=>setTheme('dark')}>Dark Mode</Button>
-      <Button onClick={()=>setTheme('light')}>Light Mode</Button>
+      <ChatinputBox/>
 
     </div>
   );

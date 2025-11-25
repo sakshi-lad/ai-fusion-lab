@@ -17,32 +17,32 @@ import { use } from "react"
       <Sidebar>
           <SidebarHeader>
             <div className="p-3">
-            <div className=" flex justify-between items-center">  
+            <div className=" flex justify between items-center">  
             <div className="flex item-center gap-3">
           <Image src={'/logo1.svg'} alt="logo" width={60} height={60}
           className="w-[40px] h-[40px]" />
           <h2 className="font-bold text-xxl">AI FUSION</h2>
           </div>
-          </div>
           <div>
-            {theme == 'light' ?<Button variant={'ghost'} onClick={()=>setTheme('dark')}><Sun/></Button>:
-            <Button variant={'ghost'} onClick={()=>setTheme('light')}><Moon/></Button>}
+            {theme == 'light' ?<Button variant={'ghost'}onClick={()=>setTheme('dark') }><Sun/></Button>
+            :<Button variant={'ghost'}onClick={()=>setTheme('light') }><Moon/></Button>}
           </div>
-          <Button className='mt-7 w-full'>+ New Chat</Button>
+          </div>
+          <Button className='mt-6 w-full'size='lg'>+ New Chat</Button>
           </div>
           </SidebarHeader>
         
         <SidebarContent>
-          <SidebarGroup >
+          <SidebarGroup>
             <div className={'p-3'}>
             <h2 className="font-bold text-lg">Chat</h2>
-            <p className="text-sm text-gray-400">Sign in to start chating with multiple AI models</p>
-            </div>
+           <p className='text-sm text-gray-400'>Sign in to start chating with multiple AI model</p>
+           </div>
           </SidebarGroup >
         </SidebarContent>
         <SidebarFooter >
-          <div className="p-3 mb-10"> 
-            <Button className={'w-full'}size={'lg'}>Sign In/Sign Up</Button>
+          <div className='p-3 mb-10'>
+            <Button className={'w-full'} size={'lg'}> Sign In/Sign Up</Button>
           </div>
           </SidebarFooter>
       </Sidebar>
