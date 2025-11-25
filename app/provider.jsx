@@ -27,4 +27,4 @@ function Provider({
   )
 }
 
-export default Provider
+export default Provider;
